@@ -1,0 +1,63 @@
+/* Dark icon color */
+.navbar-search .input-group-alternative .input-group-text .fas.fa-search {
+    color: black;
+     /* Dark color */
+  }
+  
+  /* Dark border color */
+  .navbar-search .input-group-alternative input {
+    border-color: #343a40; /* Dark border color */
+  }
+  
+  .navbar-search .input-group-alternative input:focus {
+    border-color: #343a40; /* Dark focus border color */
+  }
+  
+
+  /* Style the search input and icon for a cleaner, more modern look */
+
+/* Search input group */
+.search-input-group {
+    border-radius: 30px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background for the search bar */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  /* Search icon styles */
+  .search-icon {
+    background-color: #0e6591; /* Dark background for the icon */
+    color: white; /* White icon */
+    border-radius: 50%; /* Round the icon */
+    padding: 8px; /* Padding inside the icon */
+    transition: all 0.3s ease-in-out; /* Icon hover transition */
+  }
+  
+  .search-icon:hover {
+    background-color: #0b4c6a; /* Darker shade on hover */
+  }
+  
+  /* Input field */
+  .search-input {
+    border: 2px solid black; /* Black border color */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding inside the input */
+    font-size: 16px; /* Font size for input */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for border and shadow */
+  }
+  
+  /* Input field focus styles */
+  .search-input:focus {
+    border-color: #333; /* Darker black border on focus */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle black shadow on focus */
+    outline: none; /* Remove the default outline */
+  }
+  
+  /* Hover effect on the input */
+  .search-input:hover {
+    border-color: #333; /* Dark border color on hover */
+  }
+  
+.custom-font-size{
+    font-size: 1.25rem;
+}
+  

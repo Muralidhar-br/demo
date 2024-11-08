@@ -1,0 +1,513 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-side{
+  display: flex;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+ 
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 70px;
+  background-color:  #0B4C6A;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 0 20px;
+}
+
+
+.navbar-icons {
+  /* display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-left: 10%;
+  color: rgb(245, 240, 240);
+  height: 80px;
+  width: 80px; */
+  display: flex;
+  align-items: center;
+  gap: 36px;
+   margin: 0 auto; /* Center the navbar icons */
+  color: rgb(245, 240, 240); 
+
+}
+
+.navbar-icons i {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+  
+}
+
+.navbar-icons i:hover {
+  color:black; /* Change to your desired hover color */
+}
+
+.navbar-avatar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+   /* Push the avatar to the right */
+}
+
+.navbar-avatar i {
+  width: 60px; /* Adjust the size as needed */
+  height: 60px; /* Adjust the size as needed */
+  border-radius: 50%; /* Make it circular */
+  margin-left: 10px;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+
+
+.user-Profile-Icon{
+    height: 2rem;
+    width: 2rem;
+    color:white;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.toggle-button:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+.sidebar {
+  margin-top: 4rem; /* Move the sidebar container down */
+}
+
+.slider-container {
+  position: relative; /* Adjust to fit your design */
+  z-index: 10; /* Ensure it is above the sidebar */
+  transition: transform 0.3s ease; /* Smooth transition for sliding effect */
+}
+.dropdown-menu {
+  right: 0; /* Align dropdown to the right */
+}
+
+.Dashboard-logout {
+  display: flex;
+  background-color: #ebf0ee;
+  color: rgb(10, 10, 10);
+  border: none;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+  margin-left: auto;
+  align-items: center;
+}
+
+.Dashboard-logout:hover {
+  background-color: #4d4e4d;
+  color: white;
+}
+
+.user {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  justify-self: right;
+}
+
+.main {
+  position: absolute;
+  top: 70px;
+  left: 260px;
+  width: calc(100% - 260px);
+  min-height: calc(100vh - 70px);
+  background: #fff;
+  padding: 20px;
+  justify-content: center;
+  flex-grow: 1;
+  transition: margin-left 00.3 ease-in-out;
+}
+/* 
+Sidebar icon container (beneath top bar) */
+.sidebar-icon-container {
+ position: absolute;
+ top: 100px;
+left: 0;
+width:250px;
+transition: margin-left 0.3s ease;
+}
+
+
+
+
+/* Icon color when sidebar is closed (black) */
+.menu-icon {
+  color: black !important;
+}
+
+.sidebar {
+  float: left;
+  width: 250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height:100vh;
+  bottom: 0;
+  background-color:#EDF5F4 !important;
+  color: #4A4A4A !important;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  /* Styles when sidebar is open */
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  /* Styles when sidebar is closed */
+  transform: translateX(-100%); /* or adjust to your design */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color:#2E4852;
+  color:black;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.card {
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(5, 5, 5, 0.08);
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.number {
+  font-size: 35px;
+  font-weight: 500;
+  color: #020705;
+}
+
+.card-name {
+  color: #0c0404;
+  font-weight: 600;
+}
+
+/* Card styling for SetupView */
+.usercards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20 px;
+  margin-top: 30px; /* Offset for the fixed top bar */
+}
+
+.usercard {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid black;
+  margin-left: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(25% - 20px); /* Responsive width */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.usercard:hover {
+  transform: scale(1.05);
+}
+
+.usercard i {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.usercard h3 {
+  margin-bottom: 5px;
+  margin: auto;
+}
+
+.usercard p {
+  color: #666666;
+}
+
+.imgchart {
+  width: 100%;
+  height: auto;
+}
+.imgchart img {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.report-card {
+  flex: 1 1 calc(33.333% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+.report-card:hover {
+  box-shadow: #0c0404;
+  transform: scale(1.05);
+}
+
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    float: none;
+    transform: translateX(-100%);
+  }
+
+  .main {
+    margin-left: 0;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 90%;
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex-basis: 90%;
+    margin: 5px auto;
+  }
+}
+
+.chart-container {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    max-width: 500px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    max-width: 50%;
+    aspect-ratio: 1 / 1;
+  }
+}
+@media (max-width: 972px) {
+  .sidebar {
+    position: fixed; /* Fixed positioning for small screens */
+    left: 0;
+    top: 70px;
+    height: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+
+  .main {
+    margin-left: 0; /* Main content takes full width when sidebar is hidden */
+  }
+}
+/* Responsive card adjustments */
+@media (max-width: 768px) {
+  .usercard {
+    align-items: center;
+    margin-left: auto;
+    width: 100%; /* Full width cards on smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .usercard {
+    margin-left: auto;
+    width: 100%; /* Full width cards on smaller screens */
+  }
+}
+.menu-icon{
+  color: aliceblue;
+}
+
+.sidebar {
+  flex: 0 0 200px; /* sidebar width */
+  height: 100vh; /* full-height sidebar */
+}
+
+.main {
+  flex-grow: 1; /* main content takes remaining space */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* stack vertically on smaller screens */
+  }
+
+  .sidebar {
+    /* sidebar takes full width on small screens */
+    height: auto;
+  }
+
+  .main {
+    width: 100%; /* main content takes full width */
+  }
+}
+
+.submenu {
+  display: block; /* Ensure submenus are visible */
+  padding-left: 20px; /* Add padding for nested submenu */
+  margin-top: 5px;
+}
+
+.submenu li {
+  list-style-type: none; /* Remove bullets */
+  padding-left: 10px; /* Add some indentation for submenu items */
+}
+
+.sidebar {
+  position: fixed; /* Fixes the sidebar to the left */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Takes the full height of the viewport */
+  width: 250px; /* Adjust the width as needed */
+  background-color: #413d3d;/* Background color */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  transition: width 0.3s; /* Smooth transition when expanding/collapsing */
+  padding: 20px; /* Padding for content inside */
+  z-index: 100; /* Makes sure sidebar stays on top */
+}
+
+.sidebar.open {
+  width: 250px; /* Width when the sidebar is open */
+}
+
+.sidebar ul {
+  list-style: none; /* Removes default bullet points from list */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+.sidebar ul li {
+  padding: 10px; /* Adds padding to each list item */
+  cursor: pointer; /* Changes cursor on hover */
+  transition: background-color 0.2s; /* Smooth background color change */
+}
+
+.sidebar ul li:hover {
+  background-color: #e2e2e2; /* Background color on hover */
+}
+
+.sidebar .submenu ul {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.main-side {
+  margin-left: 250px; /* Adjust according to the sidebar width */
+  padding: 20px; /* Padding for the main content area */
+}
+
+@media (max-width: 971px) {
+  .main-side {
+    margin-left: 0; /* Resets margin when the sidebar is collapsed */
+  }
+}

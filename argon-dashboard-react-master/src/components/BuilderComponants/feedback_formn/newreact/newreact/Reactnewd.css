@@ -1,0 +1,15 @@
+.main_box{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150%;
+    height:50%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the box */
+    padding: 4rem;
+
+}
+
+.main_title{
+    font-size: 2rem;
+    font-family: "Montserrat";
+    
+}

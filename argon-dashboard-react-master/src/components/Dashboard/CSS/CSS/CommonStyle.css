@@ -1,0 +1,90 @@
+.table-responsive{
+    box-shadow: 2px 2px 6px -1px grey;
+
+}
+
+.thead-light{
+    /* <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 100 to 900 */
+    
+    
+     font-size: 1.1rem;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+    
+    }
+
+    .tbody{
+        font-size: 1.0rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .sub-menu-header, .sub-menu-column {
+        min-width: 150px;  /* Adjust the width as necessary */
+      }
+
+      .sub-menu-column {
+        text-align: center; /* Ensure the button is centered in the cell */
+      }
+
+       /* Datatype - 1 */
+       form_body{
+        font-size: 1.1rem;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+       }
+
+    /* datatype-4 styles */
+    .payment_details{
+      font-size: 1.7rem;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+    }
+
+    /* datatype-5 & datatype-6 styles,system parameter*/
+    .title_main{
+      font-size: 1.7rem;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+     color: #0E6591;
+    }
+
+    .form_content{
+      font-size: 1.1rem;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 500;
+     font-style: normal;
+    }
+
+
+    .heading_main{
+      font-size: 1.1rem;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+     
+    }
+ 
+  /* userdetails views */
+  .user-details-wrapper {
+    padding-top: 11rem;
+    padding-bottom: 5rem;/* Adjust as needed for the space between the navbar and component */
+  }
+  
+
+ 
+
+  
